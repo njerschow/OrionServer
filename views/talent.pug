@@ -1,0 +1,273 @@
+html
+  head
+    title  Talent Dashboard | The Orion Server
+    link(rel='stylesheet', href='styles.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    link(type='text/css', rel='stylesheet', href='/css/jquery.jConveyorTicker.min.css')
+  body
+    #main-wrapper
+      #messages
+        #msgw-x
+          img(src='/assets/img/whitex.png')
+        #sec1 Terrance Henderson - Messages
+        #sec2
+          #msg-list
+            #search-box
+              textarea#search-type-box(placeholder='Search A&R...')
+            .convo-snap
+              div
+                img(src='/assets/img/tde.jpg')
+              #cs-text
+                div
+                  h1 Terrance Henderson
+                  .convo-time Tue
+                p.msg Perfect, my number is 678-237-9123!
+          #convo
+            #type-box
+              textarea#inner-type-box(placeholder='Send message...')
+            div
+              .msg-timestamp
+                div Tue, 10:07 AM
+              .label-msg
+                div
+                  | Hey Drake! We love your music and our interested in connecting with you! If you're interested in us as well, please reply so we can setup a call!
+              .artist-msg
+                div Hey fam I'm definitely interested.
+              .label-msg
+                div Perfect, my number is 678-237-9123!
+      #top-sec
+        #listener-sidebar
+          a
+            div Home
+          a
+            #arm A&R Messages
+          a
+            div Songs Played
+          a
+            div Settings
+          #lower-sidebar
+            a
+              button#submit Submit
+            h5 Watching You
+            #watching
+              .watching-label
+                img(src='/assets/img/columbia.jpeg')
+                p Columbia Records
+              .watching-label
+                img(src='/assets/img/atlantic.jpeg')
+                p Atlantic Records
+              .watching-label
+                img(src='/assets/img/tde.jpg')
+                p Top Dawg Entertainment
+        #right-sec
+          #profile-page
+            #pp-r2
+              #pp-r2-c1
+                #artist-info
+                  h1#type Artist
+                  h3#genre Hip-hop/Rap
+                  h3#location Toronto, Canada
+                h1#name Drake
+              #pp-r2-c2
+                img#profile-avi(src='assets/img/avi.jpg')
+              #pp-r2-c3
+                div  
+                div(style='padding: 0 0 0 70px')
+                  span(style='font-family: Lato-Bold; color: #555; margin: 0') Bio
+                  p(style='margin: 0;')
+                    | Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper, singer, songwriter, record producer, actor, and entrepreneur. As an entrepreneur, Drake has founded the OVO Sound record label with longtime collaborator 40. Drake gained recognition as an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s. Intent on pursuing a career in music, he left the series in 2007 after releasing his debut mixtape, Room for Improvement. He released two further independent projects, Comeback Season and So Far Gone, before signing to Lil Wayne's Young Money Entertainment in June 2009.[12]
+                    br
+                    | Drake released his debut studio album Thank Me Later in 2010,[13] which debuted at number one on the US Billboard 200 and was soon certified platinum. His next two releases, 2011's Take Care and 2013's Nothing Was the Same,[14][15] were critically and commercially successful; the former earned him his first Grammy Award for Best Rap Album. In 2015, he released two mixtapes—the trap-influenced If You're Reading This It's Too Late and a collaboration with Future titled What a Time to Be Alive—both of which earned platinum certification in the U.S.[16] His fourth album, Views (2016), broke several chart records.[17] The dancehall-influenced album[18] sat atop the Billboard 200 for 13 nonconsecutive weeks,[19] becoming the first album by a male solo artist to do so in over 10 years. The album's second single, "One Dance", topped the charts in several countries, and became his first number-one single as a lead artist. That year, Drake led both the Billboard Hot 100 and the Billboard 200 charts simultaneously for eight weeks.[20]
+            a#read-more Read More
+            #edit-btn
+              img(src='/assets/img/wrench.png')
+              p Edit
+            a#sign-out Sign-out
+          #announcement-fade
+          #announcement
+            .js-conveyor-1
+              ul
+                li
+                  | Pro Tools Version 12 is now available at a 20% discount for Orion users! Use the link on our deals page to visit.
+                li
+                  | Pro Tools Version 12 is now available at a 20% discount for Orion users! Use the link on our deals page to visit.
+                li
+                  | Pro Tools Version 12 is now available at a 20% discount for Orion users! Use the link on our deals page to visit.
+          #track-cover-2
+          #track-cover
+          #content-page
+            h3 Tracks
+            #tracks-wrapper
+              #tracks
+                .track
+                  img(src='/assets/img/play.png')
+                  p#track-name Sacrifices
+                  p#track-time-elapsed 3:49
+                  #track-star-count
+                    img(src='/assets/img/star.png')
+                    p(style='padding: 0') 55
+                  p#track-artist-name Drake
+                  p#track-upload-date 5 days ago
+                  img(src='/assets/img/info.png')
+                .track
+                  img(src='/assets/img/play.png')
+                  p#track-name Nonstop
+                  p#track-time-elapsed 2:29
+                  #track-star-count
+                    img(src='/assets/img/star.png')
+                    p(style='padding: 0') 27
+                  p#track-artist-name Drake
+                  p#track-upload-date 6.14.19
+                  img(src='/assets/img/info.png')
+                .track
+                  img(src='/assets/img/play.png')
+                  p#track-name Money In The Grave
+                  p#track-time-elapsed 3:34
+                  #track-star-count
+                    img(src='/assets/img/star.png')
+                    p(style='padding: 0') 39
+                  p#track-artist-name Drake
+                  p#track-upload-date 5.26.19
+                  img(src='/assets/img/info.png')
+                .track
+                  img(src='/assets/img/play.png')
+                  p#track-name Nice For What
+                  p#track-time-elapsed 4:09
+                  #track-star-count
+                    img(src='/assets/img/star.png')
+                    p(style='padding: 0') 60
+                  p#track-artist-name Drake
+                  p#track-upload-date 5.14.19
+                  img(src='/assets/img/info.png')
+                .track
+                  img(src='/assets/img/play.png')
+                  p#track-name One Dance
+                  p#track-time-elapsed 2:50
+                  #track-star-count
+                    img(src='/assets/img/star.png')
+                    p(style='padding: 0') 18
+                  p#track-artist-name Drake
+                  p#track-upload-date 4.20.19
+                  img(src='/assets/img/info.png')
+          #notification-box
+            #notification-box-title Notifications
+            #notifs
+              .notif
+                .timestamp 8:01PM
+                .notif-msg Atlantic Records is now watching you!
+              .notif
+                .timestamp 9:42AM
+                .notif-msg Your new track "Nonstop" was successfully uploaded.
+              .notif
+                .timestamp Tuesday
+                .notif-msg Top Dawg Entertainment sent you a message.
+              .notif
+                .timestamp Monday
+                .notif-msg Your track "Sacrifices" was played by five labels this week.
+              .notif
+                .timestamp 5.27.19
+                .notif-msg Columbia Records is now watching you!
+              .notif
+                .timestamp 5.05.19
+                .notif-msg Top Dawg Entertainment is now watching you!
+          #performance-status
+            h4 Performance
+            #song-statuses
+              .status
+                .indicator(style='background: orange')
+                p(style='color: orange') Sacrifices
+              .status
+                .indicator(style='background: #0089b3')
+                p(style='color: #0089b3') Nonstop
+              .status
+                .indicator(style='background: #0089b3')
+                p(style='color: #0089b3') Money In The Grave
+              .status
+                .indicator(style='background: #00b315')
+                p(style='color: #00b315') Nice For What
+              .status
+                .indicator(style='background: orange')
+                p(style='color: orange') One Dance
+          #timeline-legend
+            .tl-type
+              .indicator(style='background: #00b315')
+              p(style='color: #00b315') Uploaded
+            .tl-type
+              .indicator(style='background: #0089b5')
+              p(style='color: #0089b5') Played
+            .tl-type
+              .indicator(style='background: orange')
+              p(style='color: orange') Starred
+      #playback-window
+        #controls
+          img(src='/assets/img/back.png')
+          img(src='/assets/img/play.png')
+          img(src='/assets/img/next.png')
+        #scroller
+          #elapsed
+            p.time 0:00
+          #temp-time
+          #total
+            p.time 0:00
+        #volume
+          img(src='/assets/img/volume.png')
+    script(src='/js/jquery.jConveyorTicker.min.js')
+    script.
+      $(function() {
+      $('.js-conveyor-1').jConveyorTicker({
+      anim_duration:  350,
+      });
+      });
+      dragElement(document.getElementById("messages"));
+      function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "sec1")) {
+      // if present, the header is where you move the DIV from:
+      document.getElementById(elmnt.id + "sec1").onmousedown = dragMouseDown;
+      } else {
+      // otherwise, move the DIV from anywhere inside the DIV:
+      elmnt.onmousedown = dragMouseDown;
+      }
+      function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+      }
+      function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+      function closeDragElement() {
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+      }
+      }
+      $( "#arm" ).click(function() {
+      $('#messages').css('display', 'flex');
+      });
+      $( "#msgw-x" ).click(function() {
+      $('#messages').css('display', 'none');
+      });
+    style.
+      .js-conveyor-1 {
+      height: 18px;
+      padding: 2px 0;
+      }
+      .jctkr-wrapper ul li {
+      font-family: Lato-light;
+      margin: 0 20px;
+      }

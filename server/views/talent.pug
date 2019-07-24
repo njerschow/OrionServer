@@ -1,7 +1,7 @@
 html
 	head
 		title  Talent Dashboard | The Orion Server
-		link(rel='stylesheet', href='styles.css')
+		link(rel='stylesheet', href='/stylesheets/styles.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
 		link(type='text/css', rel='stylesheet', href='/css/jquery.jConveyorTicker.min.css')
 	body
@@ -64,25 +64,22 @@ html
 						#pp-r2
 							#pp-r2-c1
 								#artist-info
-									h1#type Artist
-									h3#genre Hip-hop/Rap
-									h3#location Toronto, Canada
-								h1#name Drake
+									h1#type=talent.talentType
+									h3#genre=talent.genre
+									h3#location=talent.location
+								h1#name=talent.artistName
 							#pp-r2-c2
-								img#profile-avi(src='assets/img/avi.jpg')
+								img#profile-avi(src="/assets/img/avi/"+id+".jpg")
 							#pp-r2-c3
 								div  
 								div(style='padding: 0 0 0 70px')
 									span(style='font-family: Lato-Bold; color: #555; margin: 0') Bio
-									p(style='margin: 0;')
-										| Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper, singer, songwriter, record producer, actor, and entrepreneur. As an entrepreneur, Drake has founded the OVO Sound record label with longtime collaborator 40. Drake gained recognition as an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s. Intent on pursuing a career in music, he left the series in 2007 after releasing his debut mixtape, Room for Improvement. He released two further independent projects, Comeback Season and So Far Gone, before signing to Lil Wayne's Young Money Entertainment in June 2009.[12]
-										br
-										| Drake released his debut studio album Thank Me Later in 2010,[13] which debuted at number one on the US Billboard 200 and was soon certified platinum. His next two releases, 2011's Take Care and 2013's Nothing Was the Same,[14][15] were critically and commercially successful; the former earned him his first Grammy Award for Best Rap Album. In 2015, he released two mixtapes—the trap-influenced If You're Reading This It's Too Late and a collaboration with Future titled What a Time to Be Alive—both of which earned platinum certification in the U.S.[16] His fourth album, Views (2016), broke several chart records.[17] The dancehall-influenced album[18] sat atop the Billboard 200 for 13 nonconsecutive weeks,[19] becoming the first album by a male solo artist to do so in over 10 years. The album's second single, "One Dance", topped the charts in several countries, and became his first number-one single as a lead artist. That year, Drake led both the Billboard Hot 100 and the Billboard 200 charts simultaneously for eight weeks.[20]
+									p(style='margin: 0;')=talent.bio
 						a#read-more Read More
 						#edit-btn
 							img(src='/assets/img/wrench.png')
 							p Edit
-						a#sign-out Sign-out
+						a#sign-out(href="/logout") Sign-out
 					#announcement-fade
 					#announcement
 						.js-conveyor-1
@@ -103,7 +100,7 @@ html
 									.track
 										img(src='/assets/img/play.png')
 										p#track-name=track.name
-										p#track-time-elapsed=track.duration
+										p#track-time-elapsed=(track.duration-(track.duration%=60))/60+(9<track.duration?':':':0')+track.duration
 										#track-star-count
 											img(src='/assets/img/star.png')
 											p(style='padding: 0')=track.weeklyStars
@@ -235,6 +232,3 @@ html
 			font-family: Lato-light;
 			margin: 0 20px;
 			}
-
-script.
-	console.log(tracks)

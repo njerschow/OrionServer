@@ -1,0 +1,19 @@
+head
+    title Login | Orion Server
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+    link(rel='stylesheet', href='/stylesheets/login.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    link(type='text/css', rel='stylesheet', href='/css/jquery.jConveyorTicker.min.css')
+body
+    #login-container
+        #login-box
+            h1 Login | Orion
+            form(action="/login", method="post")
+                input(type="text" name="username" placeholder="Username" required)
+                input(type="password" name="password" placeholder="Password" required)
+                input(type="submit" value="Login")
+            div#forgot
+                p
+                    a(href="/forgot-password" style="color: #ffc000") Forgot Password
+                p(style="margin-top: 10px") Don't have an account?
+                    a(style="color: #52b1ff" href="/sign-up") &nbsp;&nbsp;Sign up.

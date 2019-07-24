@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#login-container {
+    background: url('/assets/img/background1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: Lato-Light;
+}
+#login-box {
+    background: #1a1a1a;
+    width: 420px;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    height: 340px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+    position: relative;
+}
+#login-box::after {
+    content: '';
+    background: #ffc000;
+    width: 420px;
+    position: absolute;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+}
+#login-box h1 {
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 16px;
+}
+#login-box form {
+    padding: 0;
+    margin: 0;
+}
+#login-box input {
+    border: none;
+    border-bottom: solid #aaa 1px;
+    background: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin: 5px auto 20px auto;
+    font-family: Lato-Light;
+    padding: 2px 0;
+    color: white;
+}
+#login-box #forgot {
+    text-align: right;
+}
+#login-box #forgot p {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+}
+#login-box #forgot a {
+    text-decoration: none;
+}
+#login-box input[type=submit] {
+    width: 120px;
+    background: white;
+    font-family: Lato-Bold;
+    color: black;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    margin: 20px auto 20px auto;
+}

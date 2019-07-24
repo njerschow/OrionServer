@@ -134,21 +134,17 @@ html
 					#performance-status
 						h4 Performance
 						#song-statuses
-							.status
-								.indicator(style='background: orange')
-								p(style='color: orange') Sacrifices
-							.status
-								.indicator(style='background: #0089b3')
-								p(style='color: #0089b3') Nonstop
-							.status
-								.indicator(style='background: #0089b3')
-								p(style='color: #0089b3') Money In The Grave
-							.status
-								.indicator(style='background: #00b315')
-								p(style='color: #00b315') Nice For What
-							.status
-								.indicator(style='background: orange')
-								p(style='color: orange') One Dance
+							each track in tracks
+								.status
+									if track.status=='uploaded'
+										.indicator(style='background: #00b315')
+										p(style='color: #00b315')=track.name
+									if track.status=='played'
+										.indicator(style='background: #0089b3')
+										p(style='color: #0089b3')=track.name
+									if track.status=='starred'
+										.indicator(style='background: orange')
+										p(style='color: orange')=track.name
 					#timeline-legend
 						.tl-type
 							.indicator(style='background: #00b315')
